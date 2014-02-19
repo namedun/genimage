@@ -322,6 +322,11 @@ static struct config opts[] = {
 		.name = "config",
 		.env = "GENIMAGE_CONFIG",
 		.def = "genimage.cfg",
+	}, {
+		.name = "mksquashfs",
+		.opt = CFG_STR("mksquashfs", NULL, CFGF_NONE),
+		.env = "GENIMAGE_MKSQUASHFS",
+		.def = "mksquashfs",
 	},
 };
 

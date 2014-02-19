@@ -26,7 +26,8 @@ genimage_SOURCES = \
 	image-tar.c \
 	image-ubi.c \
 	image-ubifs.c \
-	image-vfat.c
+	image-vfat.c \
+	image-squashfs.c
 
 genimage_CFLAGS = \
 	$(AM_CFLAGS) \
