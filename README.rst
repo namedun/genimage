@@ -91,7 +91,7 @@ Here are all options for images:
 Additionally each image can have one of the following sections describing the
 type of the image:
 
-cpio, cramfs, ext2, ext3, ext4, file, flash, hdimage, iso, jffs2, qemu, squashfs,
+cpio, cramfs, ext2, ext3, ext4, f2fs, file, flash, hdimage, iso, jffs2, qemu, squashfs,
 tar, ubi, ubifs, vfat.
 
 Partition options:
@@ -313,6 +313,16 @@ Options:
 Note: If no content is specified with ``file`` or ``files`` then
 ``rootpath`` and ``mountpoint`` are used to provide the content.
 
+f2fs
+*****
+Generates a F2FS image. Needs a valid flashtype where the flash parameters are
+read from.
+
+Options:
+
+:extraargs:		Extra arguments passed to mkfs.f2fs
+:label:			Specify the volume-label. Passed to the ``-l`` option of mkfs.f2fs
+
 The Flash Section
 -----------------
 
@@ -386,6 +396,8 @@ command line switches. For instance, a config option ``foo`` can be passed as a
 :mmd:		path to the mmd program (default mmd)
 :mkcramfs:	path to the mkcramfs program (default mkcramfs)
 :mkdosfs:	path to the mkdosfs program (default mkdosfs)
+:mkf2fs:	path to the mkfs.f2fs program (default mkfs.f2fs)
+:sloadf2fs:	path to the sload.f2fs program (default sload.f2fs)
 :mkfsjffs2:	path to the mkfs.jffs2 program (default mkfs.jffs2)
 :mkfsubifs:	path to the mkfs.ubifs program (default mkfs.ubifs)
 :mksquashfs:	path to the mksquashfs program (default mksquashfs)

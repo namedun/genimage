@@ -15,6 +15,7 @@ addons:
       - qemu-utils
       - squashfs-tools
       - qemu-utils
+      - f2fs-tools
 # FIXME: dtc on travis is too old
 #      - device-tree-compiler
 #      - u-boot-tools

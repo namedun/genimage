@@ -20,6 +20,7 @@ genimage_SOURCES = \
 	image-cpio.c \
 	image-cramfs.c \
 	image-ext2.c \
+	image-f2fs.c \
 	image-file.c \
 	image-fit.c \
 	image-flash.c \
